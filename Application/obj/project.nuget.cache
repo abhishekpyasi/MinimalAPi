@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GFnZyOvLlV1ZybpE3WgW1Z6fkw8AjBMlv9niow9H/sqWYY1h1PQVKWsnqxMZDYYLt4oZ6SWyknkHq30RqfPZGg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\abhis\\Documents\\Development\\DotNet\\MinimalApi\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abhis\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\abhis\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
