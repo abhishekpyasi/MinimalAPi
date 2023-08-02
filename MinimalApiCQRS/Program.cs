@@ -13,6 +13,23 @@ using MinimalApiCQRS.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 builder.RegisterServices();
 var app = builder.Build();
+app.Use(async (ctx, next) =>
+{
+
+    try
+    {
+
+       await next(ctx);
+    }
+
+    catch (Exception ex)
+    {
+
+        ctx.Response.StatusCode = 500;
+        await ctx.Response.WriteAsJsonAsync(ex.Message);
+    }
+
+});
 
 app.UseHttpsRedirection();
 

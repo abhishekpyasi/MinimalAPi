@@ -35,7 +35,7 @@ namespace MinimalApiCQRS.Extensions
             var endpointDefiinitions = typeof(Program).Assembly.GetTypes()
                 .Where(t => t.IsAssignableTo(typeof(IEndpointDefinition))
                 && !t.IsAbstract && !t.IsInterface)
-                .Select(Activator.CreateInstance).Cast<IEndpointDefinition>();
+                .Select(t=> Activator.CreateInstance(t)).Cast<IEndpointDefinition>();
 
             foreach(var endpointDefiinition in endpointDefiinitions)
             {
